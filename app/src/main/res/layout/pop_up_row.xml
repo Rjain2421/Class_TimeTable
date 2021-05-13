@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/colorPop"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/headlineText"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/enterDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                app:hintTextAppearance="@style/counterText"
+                app:errorTextAppearance="@style/counterOverride"
+                android:id="@+id/popSubjectWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:autofillHints="Subject"
+                    android:id="@+id/pop_subjectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/subjectName"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:hintTextAppearance="@style/counterText"
+                app:errorTextAppearance="@style/counterOverride"
+                android:id="@+id/popTeacherWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:autofillHints="Teacher"
+                    android:id="@+id/pop_teacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/teacherName"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/pop_classTime"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/timing"
+                    android:textSize="18sp" />
+                <Button
+                    android:backgroundTint="@color/colorSunday"
+                    android:id="@+id/pop_setTimeButton"
+                    android:text="@string/setTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:hintTextAppearance="@style/counterText"
+                app:errorTextAppearance="@style/counterOverride"
+                android:id="@+id/popLinkWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:autofillHints="ClassLink"
+                    android:inputType="textWebEmailAddress|textMultiLine"
+                    android:id="@+id/pop_classLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/classLink"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:textSize="17sp"
+                android:background="@android:color/transparent"
+                android:textColor="#D8C234"
+                android:text="@string/save"
+                android:id="@+id/pop_saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

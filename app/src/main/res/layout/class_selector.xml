@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_marginHorizontal="6dp"
+    android:theme="@style/CardView.changeTextColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:layout_marginVertical="3dp"
+    app:cardElevation="3dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/containerClass"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@color/colorPop">
+
+        <ImageView
+            android:id="@+id/select_personImage"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="138dp"
+            android:contentDescription="imageOfPerson"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="132dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/select_subjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/copse"
+                android:text="@string/subjectName"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/select_teacherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/copse"
+                android:text="@string/teacherName"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/select_classTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/select_classDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <RadioButton
+            android:gravity="center|end"
+            android:id="@+id/select_radioButton"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

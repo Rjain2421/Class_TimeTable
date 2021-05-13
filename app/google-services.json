@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "704563809306",
+    "firebase_url": "https://class-timetable-a1b6f.firebaseio.com",
+    "project_id": "class-timetable-a1b6f",
+    "storage_bucket": "class-timetable-a1b6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704563809306:android:50260e166227801dd115a3",
+        "android_client_info": {
+          "package_name": "com.example.class_timetable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704563809306-ic3am80tgqgi8tkj2gat4o6m5henn7pe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf6EB0MjUCs4utzbLxzM4fzWPSajoISuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704563809306-ic3am80tgqgi8tkj2gat4o6m5henn7pe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

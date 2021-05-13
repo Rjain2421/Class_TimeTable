@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/profile_border_background"
+            android:id="@+id/createProfilePhoto"
+            android:layout_width="168dp"
+            android:layout_height="185dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/editProfilePicture"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.8"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_create_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/createProfilePhoto"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/createProfilePhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:hintTextAppearance="@style/counterText"
+        app:errorTextAppearance="@style/counterOverride"
+        android:layout_marginVertical="5dp"
+        android:id="@+id/createUsernameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/create_username"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:hintTextAppearance="@style/counterText"
+        app:errorTextAppearance="@style/counterOverride"
+        android:layout_marginVertical="5dp"
+        android:id="@+id/createEmailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/create_email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/enter_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:hintTextAppearance="@style/counterText"
+        app:errorTextAppearance="@style/counterOverride"
+        android:layout_marginVertical="5dp"
+        android:id="@+id/createPasswordWrapper"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/create_password"
+            android:inputType="textPassword"
+            android:hint="@string/enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:backgroundTint="@color/colorButton"
+            android:text="@string/create_account"
+            android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/createProgressBar"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

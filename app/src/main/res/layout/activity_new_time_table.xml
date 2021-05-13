@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.NewTimeTableActivity">
+    <include
+        android:id="@+id/toolbarNewTimeTable"
+        layout="@layout/toolbar"/>
+
+    <EditText
+        android:layout_marginHorizontal="4dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/newEnteredId"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:ems="10"
+        android:hint="@string/enterAccessCode"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/newEnteredId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newEnteredId"
+        app:layout_constraintVertical_bias="0.119">
+        <Button
+            android:layout_marginStart="80dp"
+            android:id="@+id/newClearButton"
+            android:layout_marginEnd="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear" />
+        <Button
+            android:id="@+id/newGoButton"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/go" />
+    </LinearLayout>
+
+</RelativeLayout>

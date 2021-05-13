@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_marginHorizontal="6dp"
+    android:theme="@style/CardView.changeTextColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:id="@+id/containerClass"
+        android:background="@color/colorPop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/personImage"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            android:contentDescription="imageOfPerson" />
+
+        <LinearLayout
+            android:layout_width="241dp"
+            android:layout_height="135dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="81dp"
+            android:layout_toEndOf="@+id/personImage"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/copse"
+                android:text="@string/subjectName"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/copse"
+                android:id="@+id/teacherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teacherName"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/classTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timing"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/classLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classLink"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/personImage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageButton
+                android:id="@+id/notificationButton"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_notifications_active_red_24"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <ImageButton
+                android:src="@drawable/ic_launch_black_18dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/goToLink"
+                android:text="@string/goToLink"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/editButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_edit_black_24" />
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_delete_outline_24" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

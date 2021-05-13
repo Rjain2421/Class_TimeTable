@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49F451</color>
+    <color name="colorPrimaryDark">#A581F6</color>
+    <color name="colorAccent">#FFE643</color>
+    <color name="colorPop">#393939</color>
+    <color name="colorYellow">#83660E</color>
+    <color name="colorWeekdays">#838181</color>
+    <color name="colorSunday">@color/colorWeekdays</color>
+    <color name="colorWhite">#C66A6A</color>
+    <color name="bottomNav">#BF360C</color>
+    <color name="colorDay">#C66A6A</color>
+    <color name="colorAddButton">#C66A6A</color>
+    <color name="cardTextColor">#000000</color>
+    <color name="fabColor">#FBF9F9</color>
+    <color name="colorButton">#04626E</color>
+    <color name="bottomNavIcon">#04626E</color>
+</resources>

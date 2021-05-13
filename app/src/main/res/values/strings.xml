@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Class_TimeTable</string>
+    <string name="today">Today</string>
+    <string name="weekly">Weekly</string>
+    <string name="daily_fragment">Daily Fragment</string>
+    <string name="weekly_fragment">Weekly Fragment</string>
+    <string name="subjectName">Subject</string>
+    <string name="teacherName">Teacher</string>
+    <string name="timing">Timing</string>
+    <string name="classLink">Enter valid link(eg: https://google.com )</string>
+    <string name="enterDetails">Enter Class Details</string>
+    <string name="setTime">Select Timing</string>
+    <string name="save">Save</string>
+    <string name="nothing">Nothing here yet</string>
+
+
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="create">Create An Account</string>
+    <string name="orText">OR</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="create_account">Create Account</string>
+    <string name="jump">jump</string>
+    <string name="title_activity_post_login">PostLoginActivity</string>
+
+    <string name="signout">Sign Out</string>
+    <string name="person_name">Enter your name</string>
+    <string name="info">Enter some information about you</string>
+    <string name="Username">Username</string>
+    <string name="UserInfo">UserInfo</string>
+    <string name="goToLink">Go To Link</string>
+    <string name="add">AddClass</string>
+    <string name="nextAlarmTime">"Next Alarm in: "</string>
+    <string name="send_token">Send Token</string>
+    <string name="breakfast_notification_channel_id">noti_channel</string>
+    <string name="access_other_table">Access other Table</string>
+    <string name="share_table">Share Table</string>
+    <string name="go">Go</string>
+    <string name="enterAccessCode">Enter Access Code</string>
+
+    <string name="nullText">null</string>
+    <string name="reset">Reset Table to Default</string>
+    <string name="clear">Clear</string>
+    <string name="deleteAccount">Delete Account</string>
+    <string name="letsGo">Let\'s Go</string>
+    <string name="yesText">Yes</string>
+    <string name="sureText">Are you sure?</string>
+    <string name="noText">No</string>
+    <string name="cancelText">Cancel</string>
+    <string name="email">Email Id</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="send_confirmation_mail">Send Confirmation Mail</string>
+    <string name="import_data">Import Data</string>
+    <string name="day">day</string>
+
+    <string-array name="weekdays">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+</resources>
